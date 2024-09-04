@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\controllers\\usocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\usocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\controllers\\insumocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\insumocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\controllers\\proyectocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\proyectocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\controllers\\tareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\tareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\controllers\\avancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\avancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\models\\uso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\uso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\database\\constructoradbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\database\\constructoradbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\models\\insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\models\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\fabia\\source\\repos\\proyectofinal\\proyectofinal\\models\\avance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\avance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AvanceController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\AvanceController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\AvanceController.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\AvanceController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\AvanceController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAkwFcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T12:02:43.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsoController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\UsoController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\UsoController.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\UsoController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\UsoController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T12:32:33.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProyectoController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\ProyectoController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\ProyectoController.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\ProyectoController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\ProyectoController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAwEsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T12:12:40.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InsumoController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\InsumoController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\InsumoController.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\InsumoController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\InsumoController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowFIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T12:23:24.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TareaController.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\TareaController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\TareaController.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Controllers\\TareaController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\TareaController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAkwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T12:14:52.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tarea.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Tarea.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Models\\Tarea.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Tarea.cs",
+              "RelativeToolTip": "ProyectoFinal\\Models\\Tarea.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T11:32:57.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Avance.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Avance.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Models\\Avance.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Avance.cs",
+              "RelativeToolTip": "ProyectoFinal\\Models\\Avance.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T11:45:05.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Uso.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Uso.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Models\\Uso.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Uso.cs",
+              "RelativeToolTip": "ProyectoFinal\\Models\\Uso.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T11:41:18.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Insumo.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Insumo.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Models\\Insumo.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Insumo.cs",
+              "RelativeToolTip": "ProyectoFinal\\Models\\Insumo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T11:37:54.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConstructoraDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\DataBase\\ConstructoraDbContext.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\DataBase\\ConstructoraDbContext.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\DataBase\\ConstructoraDbContext.cs",
+              "RelativeToolTip": "ProyectoFinal\\DataBase\\ConstructoraDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T11:59:03.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Proyecto.cs",
+              "DocumentMoniker": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Proyecto.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Models\\Proyecto.cs",
+              "ToolTip": "C:\\Users\\fabia\\source\\repos\\ProyectoFinal\\ProyectoFinal\\Models\\Proyecto.cs",
+              "RelativeToolTip": "ProyectoFinal\\Models\\Proyecto.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T11:29:07.383Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

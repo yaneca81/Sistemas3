@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|d:\\programacion\\react\\proyectos\\proyecto_contruccion\\backend\\proyectofinal\\proyectofinal\\dtos\\usodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\dtos\\usodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|d:\\programacion\\react\\proyectos\\proyecto_contruccion\\backend\\proyectofinal\\proyectofinal\\controllers\\usocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\usocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|d:\\programacion\\react\\proyectos\\proyecto_contruccion\\backend\\proyectofinal\\proyectofinal\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|d:\\programacion\\react\\proyectos\\proyecto_contruccion\\backend\\proyectofinal\\proyectofinal\\controllers\\avancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\avancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|d:\\programacion\\react\\proyectos\\proyecto_contruccion\\backend\\proyectofinal\\proyectofinal\\automappers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\automappers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|d:\\programacion\\react\\proyectos\\proyecto_contruccion\\backend\\proyectofinal\\proyectofinal\\models\\uso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\uso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|d:\\programacion\\react\\proyectos\\proyecto_contruccion\\backend\\proyectofinal\\proyectofinal\\dtos\\avancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\dtos\\avancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|d:\\programacion\\react\\proyectos\\proyecto_contruccion\\backend\\proyectofinal\\proyectofinal\\dtos\\tareadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D61EC4A4-273F-4290-981E-672445A8FAE7}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\dtos\\tareadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tarea.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\Models\\Tarea.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Models\\Tarea.cs",
+              "ToolTip": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\Models\\Tarea.cs",
+              "RelativeToolTip": "ProyectoFinal\\Models\\Tarea.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAYwBEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T18:22:03.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsoDTO.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\DTOs\\UsoDTO.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\DTOs\\UsoDTO.cs",
+              "ToolTip": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\DTOs\\UsoDTO.cs",
+              "RelativeToolTip": "ProyectoFinal\\DTOs\\UsoDTO.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA4wAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T17:58:52.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Uso.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\Models\\Uso.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Models\\Uso.cs",
+              "ToolTip": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\Models\\Uso.cs",
+              "RelativeToolTip": "ProyectoFinal\\Models\\Uso.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAzwA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T17:58:01.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsoController.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\Controllers\\UsoController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\UsoController.cs",
+              "ToolTip": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\Controllers\\UsoController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\UsoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T17:56:35.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\AutoMappers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\AutoMappers\\MappingProfile.cs",
+              "ToolTip": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\AutoMappers\\MappingProfile.cs",
+              "RelativeToolTip": "ProyectoFinal\\AutoMappers\\MappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T15:21:37.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AvanceController.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\Controllers\\AvanceController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\AvanceController.cs",
+              "ToolTip": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\Controllers\\AvanceController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\AvanceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T15:43:59.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AvanceDTO.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\DTOs\\AvanceDTO.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\DTOs\\AvanceDTO.cs",
+              "ToolTip": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\DTOs\\AvanceDTO.cs",
+              "RelativeToolTip": "ProyectoFinal\\DTOs\\AvanceDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T15:44:15.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TareaDTO.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\DTOs\\TareaDTO.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\DTOs\\TareaDTO.cs",
+              "ToolTip": "D:\\PROGRAMACION\\react\\PROYECTOS\\proyecto_contruccion\\backend\\ProyectoFinal\\ProyectoFinal\\DTOs\\TareaDTO.cs",
+              "RelativeToolTip": "ProyectoFinal\\DTOs\\TareaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T15:18:17.415Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
