@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCare | Cuidando tu Salud</title>
+  <link rel="shortcut icon" href="./pharmacy.png" type="image">
+  <link rel="stylesheet" href="./src/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preload" as="image" href="./src/assets/images/logo.png">
+  <link rel="preload" as="image" href="./src/assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./src/assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./src/assets/images/hero-banner-3.jpg">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() 
+    {
+      var modal = document.getElementById("loginModal");
+      var btn = document.querySelector('a[data-toggle="modal"][data-target="#loginModal"]');
+      var span = document.getElementsByClassName("close")[0];
+      if (btn) {
+        btn.onclick = function(event) {
+          event.preventDefault(); 
+          modal.style.display = "block";
+        }
+      }
+
+      if (span) {
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    });
+  </script>
+</head>
+<body id="top">
+  
+  <header class="header">
+    <!--
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Consulta Gratuita con Nuestros Farmacéuticos en Línea</p>
+      </div>
+    </div>
+    -->
+    
+    <div class="header-top" data-header>
+      <div class="container">
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" id="searchInput" placeholder="Buscar Producto" class="search-field">
+            <button class="search-submit" aria-label="search" onclick="buscarProducto()">
+                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+      </div>
+      
+  
+      <!-- Contenedor para mostrar resultados -->
+      <div id="resultados"></div>
+        <a href="#" class="logo">
+          <img src="./src/assets/images/heart.png" width="40" height="40" alt="Icon">
+          <img src="./src/assets/images/logo.jpg" width="183" height="30" alt="MediCare">
+        </a>
+
+        <div class="header-actions">
+
+          <button class="header-action-btn" aria-label="user">
+            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart item">
+            <data class="btn-text" value="0">Bs. 0.00</data>
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            <span class="btn-badge">0</span>
+          </button>
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="/src/componentes/Producto/BuscarProducto.html" class="navbar-link has-after">Buscar Productos</a>
+            </li>
+            <li>
+              <a href="#home" class="navbar-link has-after">Inicio</a>
+            </li>
+            <li>
+              <a href="#collection" class="navbar-link has-after">Colección</a>
+            </li>
+            <li>
+              <a href="#shop" class="navbar-link has-after">Productos</a>
+            </li>
+            <li>
+              <a href="#offer" class="navbar-link has-after">Ofertas</a>
+            </li>
+            <li>
+              <a href="#contact" class="navbar-link has-after">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./src/assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+        </li>
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Colección/a>
+        </li>
+        <li>
+          <a href="#shop" class="navbar-link" data-nav-link>Productos</a>
+        </li>
+        <li>
+          <a href="#offer" class="navbar-link" data-nav-link>Ofertas</a>
+        </li>
+        <li>
+          <a href="#contact" class="navbar-link" data-nav-link>Contacto</a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+          <ul class="has-scrollbar">
+            <!-- Sección de Medicamentos -->
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./src/assets/images/hero-banner-1.jpg')">
+                <div class="card-content">
+                  <h1 class="h1 hero-title">
+                    Medicamentos de Calidad <br>
+                    Para Tu Salud
+                  </h1>
+                  <p class="hero-text">
+                    Encuentra una amplia gama de medicamentos que cubren todas tus necesidades de salud.
+                  </p>
+                  <p class="price">Visita nuestro catálogo</p>
+                  <a href="#medications" class="btn btn-primary">Ver Medicamentos</a>                  
+                </div>
+              </div>
+            </li>
+      
+            <!-- Sección de Skin Care -->
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./src/assets/images/hero-banner-2.jpg')">
+                <div class="card-content">
+                  <h1 class="h1 hero-title">
+                    Cuidado de la Piel <br>
+                    Para Tu Belleza
+                  </h1>
+                  <p class="hero-text">
+                    Explora nuestra gama de productos de skin care diseñados para cuidar y realzar tu piel.
+                  </p>
+                  <p class="price">Visita nuestro catálogo</p>
+                  <a href="#skincare" class="btn btn-primary">Explora Skin Care</a>
+                </div>
+              </div>
+            </li>
+      
+            <!-- Sección de Nutrición -->
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./src/assets/images/hero-banner-3.jpg')">
+                <div class="card-content">
+                  <h1 class="h1 hero-title">
+                    Nutrición para <br>
+                    Tu Bienestar
+                  </h1>
+                  <p class="hero-text">
+                    Ofrecemos suplementos y productos nutricionales para apoyar tu salud y mantenerte en forma.
+                  </p>
+                  <p class="price">Visita nuestro catálogo</p>
+                  <a href="#nutrition" class="btn btn-primary">Comprar Nutrición</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      
+      <!-- 
+    - #COLLECTION
+-->
+<section class="section collection" id="collection" aria-label="collection" data-section>
+  <div class="container">
+
+    <ul class="collection-list">
+      <li>
+        <div class="collection-card has-before hover:shine">
+          <h2 class="h2 card-title">Medicación Esencial</h2>
+          <p class="card-text">Desde $17.99</p>
+          <a href="#" class="btn-link">
+            <span class="span">Ver Medicamentos</span>
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+          <div class="has-bg-image" style="background-image: url('./src/assets/images/collection-1.jpg')"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="collection-card has-before hover:shine">
+          <h2 class="h2 card-title">Novedades en Cuidado</h2>
+          <p class="card-text">Descubre lo nuevo</p>
+          <a href="#" class="btn-link">
+            <span class="span">Explorar Novedades</span>
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+          <div class="has-bg-image" style="background-image: url('./src/assets/images/collection-2.jpg')"></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="collection-card has-before hover:shine">
+          <h2 class="h2 card-title">Ofertas Especiales</h2>
+          <p class="card-text">Desde $7.99</p>
+          <a href="#" class="btn-link">
+            <span class="span">Ver Ofertas</span>
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+          <div class="has-bg-image" style="background-image: url('./src/assets/images/collection-3.jpg')"></div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+      <!-- 
+        - #SHOP
+      -->
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Nuestros más vendidos</h2>
+            <a href="/src/componentes/Producto/BuscarProducto.html" class="btn-link">
+              <span class="span">Ver todos los productos</span>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-01.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <span class="badge" aria-label="20% off">-20%</span>
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <del class="del">Bs39.00</del>
+                    <span class="span">Bs29.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Crema facial</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-02.jpg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <span class="span">Bs29.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Suero Rejuvenecedor Bio-shroom</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-03.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <span class="span">Bs11.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Crema para Ojos con Cafeína y Extracto de Grano de Café</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-04.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <span class="span">Bs22.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Crema Facial</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-05.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <span class="badge" aria-label="20% off">-20%</span>
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <del class="del">Bs39.00</del>
+                    <span class="span">Bs23.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Crema para Ojos con Cafeína y Extracto de Grano de Café</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-06.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <span class="span">Bs25.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Limpiador Facial</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Los más destacados</h2>
+            <a href="/src/componentes/Producto/BuscarProducto.html" class="btn-link">
+              <span class="span">Ver todos los productos</span>
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-07.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <span class="badge" aria-label="20% off">-20%</span>
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <del class="del">Bs39.00</del>
+                    <span class="span">Bs19.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Limpiador Facial </a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-08.jpg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="price">
+                    <span class="span">Bs30.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Crema Sérum Bio-shroom para piel irritada</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-09.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <span class="span">Bs29.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Desinfectante</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-10.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <span class="span">Bs19.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Limpiador Facial</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-11.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <span class="badge" aria-label="20% off">-20%</span>
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <del class="del">Bs39.00</del>
+                    <span class="span">Bs9.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Crema Para Piel Sencible</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 calificaciones</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./src/assets/images/product-01.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to whishlist">
+                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <div class="price">
+                    <span class="span">Bs20.00</span>
+                  </div>
+                  <h3>
+                    <a href="#" class="card-title">Limpiador crematico Facial</a>
+                  </h3>
+                  <div class="card-rating">
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <p class="rating-text">5170 reviews</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 
+        - #BANNER
+      -->
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+          <ul class="banner-list">
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+                <p class="card-subtitle">Cuidado Personal</p>
+                <h2 class="h2 card-title">Renueva Tu Piel Este Otoño</h2>
+                <a href="#" class="btn btn-secondary">Descubre Más</a>
+                <div class="has-bg-image" style="background-image: url('./src/assets/images/banner-1.jpg')"></div>
+              </div>
+            </li>
+      
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+                <h2 class="h2 card-title">Salud Familiar</h2>
+                <p class="card-text">
+                  Productos de salud y bienestar para toda la familia.
+                </p><br><br><br><br><br>
+                <a href="#" class="btn btn-secondary">Ver Ofertas</a>
+                <div class="has-bg-image" style="background-image: url('./src/assets/images/banner-2.jpg')"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- 
+        - #FEATURE
+      -->
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+          <h2 class="h2-large section-title">¿Por qué elegir nuestra farmacia?</h2>
+          <ul class="flex-list">
+            <li class="flex-item">
+              <div class="feature-card">
+                <img src="./src/assets/images/feature-1.png" width="204" height="236" loading="lazy" alt="Productos de Confianza"
+                  class="card-icon">
+                <h3 class="h3 card-title">Productos de Confianza</h3>
+                <p class="card-text">
+                  Ofrecemos medicamentos y productos de salud certificados, respaldados por profesionales y regulados para tu seguridad.
+                </p>
+              </div>
+            </li>
+      
+            <li class="flex-item">
+              <div class="feature-card">
+                <img src="./src/assets/images/feature-2.png" width="204" height="236" loading="lazy"
+                  alt="Atención Personalizada" class="card-icon">
+                <h3 class="h3 card-title">Atención Personalizada</h3>
+                <p class="card-text">
+                  Nuestro equipo de farmacéuticos está disponible para brindarte asesoría personalizada y garantizar que recibas el cuidado que necesitas.
+                </p>
+              </div>
+            </li>
+      
+            <li class="flex-item">
+              <div class="feature-card">
+                <img src="./src/assets/images/feature-3.png" width="204" height="236" loading="lazy"
+                  alt="Amplia Variedad de Productos" class="card-icon">
+                <h3 class="h3 card-title">Variedad de Productos</h3>
+                <p class="card-text">
+                  Desde medicamentos hasta productos para el cuidado personal y suplementos, contamos con una amplia gama de opciones para tu salud.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- 
+        - #OFFER
+      -->
+      <section class="section offer" id="offer" aria-label="offer" data-section>
+        <div class="container">
+          <figure class="offer-banner">
+            <img src="./src/assets/images/offer-banner-1.jpg" width="305" height="408" loading="lazy" alt="productos en oferta"
+              class="w-100">
+      
+            <img src="./src/assets/images/offer-banner-2.jpg" width="450" height="625" loading="lazy" alt="productos en oferta"
+              class="w-100">
+          </figure>
+          <div class="offer-content">
+            <p class="offer-subtitle">
+              <span class="span">Oferta Especial</span>
+              <span class="badge" aria-label="20% de descuento">-20%</span>
+            </p>
+            <h2 class="h2-large section-title">Vitaminas Esenciales</h2>
+            <p class="section-text">
+              Aprovecha nuestra promoción en suplementos de alta calidad para apoyar tu salud y bienestar general.
+            </p>
+            <div class="countdown">
+              <span class="time" aria-label="días">15</span>
+              <span class="time" aria-label="horas">21</span>
+              <span class="time" aria-label="minutos">46</span>
+              <span class="time" aria-label="segundos">08</span>
+            </div>
+            <a href="#" class="btn btn-primary">Sólo por $39.00</a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 
+        - #BLOG
+      -->
+      <section class="section contact" id="contact" aria-label="contact" data-section>
+        <div class="container">
+          <center>
+          <h2 class="h2-large section-title">¡Contáctanos!</h2></center> <br><br>
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <figure class="img-holder has-before hover:shine" style="--width: 700; --height: 450; border: 1px solid #ffffff; border-radius: 10px;">
+                <img src="./src/assets/images/contact-us.jpg" width="700" height="450" loading="lazy" alt="Contact Us"
+                  class="img-cover">
+              </figure>
+            </div>
+      
+            <div class="contact-form" style="background-color: #eaf2f8; padding: 2rem; border-radius: 10px;">
+              <form action="#" method="post" class="form">
+                <div class="form-group">
+                  <label for="name" class="form-label">Nombre Completo</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Tu Nombre" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="Tu Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="form-label">Asunto</label>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="Asunto del Mensaje" required>
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Mensaje</label>
+                  <textarea id="message" name="message" class="form-input" placeholder="Tu Mensaje" rows="5" required></textarea>
+                </div>
+                <center><button type="submit" class="btn btn-primary">Enviar Mensaje</button></center>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <!--
+      - #MODAL
+    -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-form">
+            <span class="close">&times;</span>
+            <!-- Imagen de Medicare -->
+            <div class="medicare-logo">
+              <img src="./src/assets/images/Login.jpg" alt="Medicare Logo">
+            </div>
+            <p>también puedes Iniciar Sesión con</p>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div><br>
+            <form id="loginForm" method="post">
+              <div class="formu-group">
+                  <div class="input-wrap">
+                      <i class="fas fa-envelope input-icon"></i>
+                      <input type="text" id="username" name="username" class="formu-input" placeholder="Correo Electrónico" required>
+                  </div>
+              </div>
+              <div class="formu-group">
+                  <div class="input-wrap">
+                      <i class="fas fa-lock input-icon"></i>
+                      <input type="password" id="password" name="password" class="formu-input" placeholder="Contraseña" required>
+                  </div>
+              </div>
+              <button type="submit" class="btn bton-primary">Iniciar Sesión</button>
+              <div id="loginError" style="color:red; display:none;">Error: Credenciales incorrectas.</div>
+          </form>
+          
+          <script>
+              document.getElementById("loginForm").addEventListener("submit", function(event) {
+                  event.preventDefault();
+          
+                  const username = document.getElementById("username").value;
+                  const password = document.getElementById("password").value;
+          
+                  // Credenciales predeterminadas
+                  const validCredentials = [
+                      { username: "firensono@gmail.com", password: "limon001" },
+                      { username: "darlyn@gmail.com", password: "limon001" }
+                  ];
+          
+                  const isValid = validCredentials.some(cred => 
+                      cred.username === username && cred.password === password
+                  );
+          
+                  if (isValid) {
+                      window.location.href = "/dashboard/index.html";
+                  } else {
+                      document.getElementById("loginError").style.display = "block";
+                  }
+              });
+          </script>
+          
+          
+          
+          
+          </div>
+        </div>
+      </div>
+    </div>    
+  </main>
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer" data-section>
+    <div class="container">
+      <div class="footer-top">
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Farmacia</p>
+          </li>
+          <li>
+            <p class="footer-list-text">
+              Encuentre una ubicación más cercana a usted. Ver <a href="#" class="link">Nuestras tiendas</a>
+            </p>
+          </li>
+          <li>
+            <p class="footer-list-text bold">+466 45678</p>
+          </li>
+          <li>
+            <p class="footer-list-text">medicare@gmail.com</p>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Enlaces útiles</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Nuevos productos</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Más vendidos</a>
+          </li>
+          <li>
+            <a href="./dashboard/" class="footer-link">Administración</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link" data-toggle="modal" data-target="#loginModal">Iniciar Sesión</a>
+          </li>
+        </ul>
+
+        <ul class="lista-pie de página">
+          <li>
+            <p class="footer-list-title">Información</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Contáctenos</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Preguntas frecuentes</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Términos y condiciones</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Política de privacidad</a>
+          </li>
+        </ul>
+
+
+        <div class="footer-list">
+          <p class="newsletter-title">Suscríbete</p>
+          <p class="newsletter-text">
+            Ingrese su correo electrónico a continuación para ser el primero en enterarse de nuevas ofertas y lanzamientos de productos.          </p>
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Ingrese su dirección de correo electrónico" required
+              class="email-field">
+            <button type="submit" class="btn btn-primary">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2024 MediCare
+          </p>
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="logo">
+          <img src="./src/assets/images/logo.jpg" width="179" height="26" loading="lazy" alt="Glowing">
+        </a>
+        <img src="./src/assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+      </div>
+    </div>
+  </footer>
+  <!-- 
+    - #BACK TO TOP
+  -->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+  <!-- 
+    - custom js link
+  -->
+  <script src="./src/assets/js/script.js" defer></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

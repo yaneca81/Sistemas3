@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b2cfc9;
+}
+
+.container {
+    position: relative; /* Necesario para posicionar el enlace dentro del contenedor */
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(212, 255, 248);
+    overflow: hidden;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+.back-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    width: 350px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #000; /* Icon color set to black */
+    font-size: 14px;
+}
+
+/* Estilos para todos los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 280px;
+    padding: 10px 10px 10px 40px; /* Ajusta el padding para los iconos */
+    margin: 0;
+    border: none; /* Remueve el borde */
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 13px;
+    outline: none;
+    background-color: #f2f3f4;
+}
+
+/* Efecto de enfoque para todos los campos */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    box-shadow: 0 0 5px rgba(130, 134, 134, 0.5);
+}
+
+/* Estilos específicos para el campo select */
+select {
+    padding-left: 10px; /* Select no necesita tanto padding a la izquierda */
+    background-color: #f2f3f4; /* Aplica el mismo color de fondo */
+    -webkit-appearance: none; /* Remueve la apariencia nativa de los select en algunos navegadores */
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('ruta/a/tu/icono.svg'); /* Reemplaza con la ruta de tu icono */
+    background-repeat: no-repeat;
+    background-position: 95% center; /* Ajusta la posición del icono */
+    background-size: 16px; /* Ajusta el tamaño del icono */
+}
+
+/* Estilo adicional para evitar que el texto se superponga al icono */
+select {
+    padding-right: 40px; /* Añade espacio a la derecha para que el texto no se superponga con el icono */
+}
+
+/* Icono del select en focus */
+select:focus {
+    box-shadow: 0 0 5px rgba(130, 134, 134, 0.5);
+}
+
+
+button {
+    width: 160px;
+    padding: 10px;
+    border: none;
+    border-radius: 17px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #217564;
+}
+
+.back-link img {
+    vertical-align: middle; /* Centers the image vertically in the link */
+}

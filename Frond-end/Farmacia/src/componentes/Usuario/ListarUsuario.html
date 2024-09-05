@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/public/pharmacy.png" type="image/x-icon">
+    <title>Administración | Usuarios</title>
+    <link rel="stylesheet" type="text/css" href="/src/assets/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-WXyH6cH36aYcrOIBCVgjfE7w5R9Rk5yFrVh/5V9Kl7KriEY/PQJbZgKavOhhmX8L0xBn97jSDqD1trrrw1VHdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="table" id="customers_table">
+        <section class="table__header">
+            <div class="input-group">
+                <a href="../Usuario/AgregarUsuario.html"><img src="/src/assets/images/icon-g.png" alt="Icono de mensajes" /></a>
+                <h1>Usuarios</h1>
+            </div>
+            <div class="export__file">
+                <i class="fas fa-check"></i>
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <span class="export__file-text"><a href="/dashboard/index.html">Salir</a></span>
+            </div>
+        </section>
+        <section class="table__body">
+            <table id="usuariosTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Contacto</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se insertarán las filas dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('https://localhost:7044/api/Usuario/Listar')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.querySelector('#usuariosTable tbody');
+                    data.forEach(dato => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td contenteditable="true" data-original="${dato.nombre}">${dato.nombre || 'No disponible'}</td>
+                            <td contenteditable="true" data-original="${dato.apellido}">${dato.apellido || 'No disponible'}</td>
+                            <td contenteditable="true" data-original="${dato.correo}">${dato.correo || 'No disponible'}</td>
+                            <td contenteditable="true" data-original="${dato.contacto}">${dato.contacto || 'No disponible'}</td>
+                            <td contenteditable="true" data-original="${dato.rol}">${dato.rol || 'No disponible'}</td>
+                            <td>
+                                <button class="edit-button" onclick="editarUsuario(${dato.idUsuario}, this)">
+                                    <i class="fas fa-edit"></i> Editar
+                                </button>
+                                <button class="delete-button" onclick="eliminarUsuario(${dato.idUsuario}, this)">
+                                    <i class="fas fa-trash-alt"></i> Eliminar
+                                </button>
+                            </td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error al conectarse al backend:', error));
+        });
+
+        function editarUsuario(idUsuario, button) {
+    const row = button.closest('tr');
+    const nombre = row.children[0].textContent.trim();
+    const apellido = row.children[1].textContent.trim();
+    const correo = row.children[2].textContent.trim();
+    const contacto = row.children[3].textContent.trim();
+    const rol = row.children[4].textContent.trim();
+    // Asegúrate de que la contraseña esté presente si es editable.
+    // Si no, remueve la línea que hace referencia a 'contraseña'.
+    const contraseña = row.children[5] ? row.children[5].textContent.trim() : ''; 
+
+    if (nombre !== row.children[0].dataset.original || 
+        apellido !== row.children[1].dataset.original ||
+        correo !== row.children[2].dataset.original || 
+        contacto !== row.children[3].dataset.original || 
+        rol !== row.children[4].dataset.original ||
+        contraseña !== (row.children[5] ? row.children[5].dataset.original : '')) {
+
+        const usuario = {
+            IdUsuario: idUsuario,
+            Nombre: nombre,
+            Apellido: apellido,
+            Correo: correo,
+            Contraseña: contraseña, // Verifica si es necesario
+            Contacto: contacto,
+            Rol: rol
+        };
+
+        fetch(`https://localhost:7044/api/Usuario/Editar/${idUsuario}`, {
+            method: 'PUT',
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(usuario)
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Usuario editado exitosamente');
+                row.children[0].dataset.original = nombre;
+                row.children[1].dataset.original = apellido;
+                row.children[2].dataset.original = correo;
+                row.children[3].dataset.original = contacto;
+                row.children[4].dataset.original = rol;
+                if (row.children[5]) {
+                    row.children[5].dataset.original = contraseña;
+                }
+            } else {
+                alert('Usuario editado exitosamente');
+            }
+        })
+        .catch(error => console.error('Error al editar usuario:', error));
+    } else {
+        alert('No hay cambios para guardar');
+    }
+}
+
+
+        function eliminarUsuario(idUsuario, button) {
+            if (confirm('¿Estás seguro de que deseas eliminar este usuario?')) {
+                fetch(`https://localhost:7044/api/Usuario/Eliminar/${idUsuario}`, {
+                    method: 'DELETE'
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Usuario eliminado exitosamente');
+                        const row = button.closest('tr');
+                        row.remove();
+                    } else {
+                        alert('Error al eliminar el usuario');
+                    }
+                })
+                .catch(error => console.error('Error al eliminar usuario:', error));
+            }
+        }
+    </script>
+    <script src="/src/assets/js/sms.js"></script>
+</body>
+</html>

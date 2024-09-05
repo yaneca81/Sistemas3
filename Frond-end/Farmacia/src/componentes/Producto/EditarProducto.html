@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/pharmacy.png" type="image/x-icon">
+    <title>Producto | Insertar</title>
+    <link rel="stylesheet" href="/src/assets/css/formulario.css">
+    <!-- Incluye Font Awesome para los iconos en los campos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <a href="/src/componentes/Producto/ListarProducto.html" class="back-link"><img src="/src/assets/images/atras.png" width="35"></a>
+            <div class="header">
+                <img src="/src/assets/images/Editar Producto.jpg" alt="Icono" class="header-icon">
+            </div>
+            <form id="agregarProductoForm">
+                <div class="input-group">
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre del Producto" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-align-left"></i>
+                    <input type="text" id="descripcion" name="descripcion" placeholder="Descripción del Producto" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-barcode"></i>
+                    <input type="text" id="codigoBarras" name="codigoBarras" placeholder="Código de Barras" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-dollar-sign"></i>
+                    <input type="text" step="0.01" id="precioVenta" name="precioVenta" placeholder="Precio de Venta" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-dollar-sign"></i>
+                    <input type="text" step="0.01" id="precioCosto" name="precioCosto" placeholder="Precio de Costo" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-box-open"></i>
+                    <input type="text" id="presentacion" name="presentacion" placeholder="Presentación" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" id="fechaVencimiento" name="fechaVencimiento" placeholder="Fecha de Vencimiento" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" id="fechaAdquisicion" name="fechaAdquisicion" placeholder="Fecha de Adquisición" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-tag"></i>
+                    <input type="text" id="marca" name="marca" placeholder="Marca" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-boxes"></i>
+                    <input type="number" id="stock" name="stock" placeholder="Cantidad en Stock" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-info-circle"></i>
+                    <input type="text" id="estado" name="estado" placeholder="Estado del Producto" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-image"></i>
+                    <input type="text" id="imagen" name="imagen" placeholder="URL de la Imagen" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-tags"></i>
+                    <select id="idCategoria" name="idCategoria" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <center><button type="submit">Actualizar</button></center>
+            </form>            
+        </div>
+        <div class="image-container">
+            <img src="/src/assets/images/productoimg.jpg" alt="Imagen decorativa">
+        </div>
+    </div>
+</body>
+</html>

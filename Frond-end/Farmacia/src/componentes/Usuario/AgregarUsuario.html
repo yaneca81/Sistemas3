@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/public/pharmacy.png" type="image/x-icon">
+    <title>Usuario | Insertar</title>
+    <link rel="stylesheet" href="/src/assets/css/formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <a href="/src/componentes/Usuario/ListarUsuario.html" class="back-link">
+                <img src="/src/assets/images/atras.png" width="35" alt="Volver">
+            </a>
+            <div class="header">
+                <img src="/src/assets/images/Agregar Usuario.jpg" alt="Icono" class="header-icon">
+            </div>
+            <form id="agregarUsuarioForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-user-tag"></i>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="correo" name="correo" placeholder="Correo" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" id="contacto" name="contacto" placeholder="Contacto" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-user-shield"></i>
+                    <select id="rol" name="rol" required>
+                        <option value="" disabled selected>Seleccionar Rol</option>
+                        <option value="Administrador">Administrador</option>
+                        <option value="Cliente">Cliente</option>
+                    </select>
+                </div>
+                <center><button type="submit">Agregar Usuario</button></center>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="/src/assets/images/usuarioimg.jpg" alt="Imagen decorativa">
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("agregarUsuarioForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const usuario = {
+                    Nombre: document.getElementById("nombre").value,
+                    Apellido: document.getElementById("apellido").value,
+                    Correo: document.getElementById("correo").value,
+                    Contraseña: document.getElementById("contraseña").value,
+                    Contacto: document.getElementById("contacto").value,
+                    Rol: document.getElementById("rol").value 
+                };
+
+                fetch("https://localhost:7044/api/Usuario/Insertar", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(usuario)
+                })
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error('Error al agregar el usuario');
+                })
+                .then(data => {
+                    alert("Usuario agregado exitosamente");
+                    window.location.href = "/src/componentes/Usuario/ListarUsuario.html";
+                })
+                .catch(error => console.error('Error:', error));
+            });
+        });
+    </script>
+</body>
+</html>
