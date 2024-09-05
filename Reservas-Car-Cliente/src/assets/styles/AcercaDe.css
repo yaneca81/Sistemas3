@@ -1,0 +1,32 @@
+.acerca-de-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .integrantes {
+    margin-top: 20px;
+  }
+  
+  .integrantes h3 {
+    margin-bottom: 10px;
+  }
+  
+  .integrantes ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .integrantes li {
+    margin-bottom: 5px;
+  }
+  
+  .foto-container {
+    margin-top: 20px;
+  }
+  
+  .foto-ancha {
+    width: 100%;
+    height: auto;
+  }
+  

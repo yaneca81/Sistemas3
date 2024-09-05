@@ -1,0 +1,128 @@
+/* Contenedor principal */
+.dashboard-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+/* Contenedor del video */
+.video-container {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-background {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenedor del filtro */
+.filtro-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filtro-categoria {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #333;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Estilo para la cuadrícula de vehículos */
+.vehiculos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Estilo de las tarjetas de vehículos */
+.vehiculo-card {
+  background-color: rgba(0, 0, 0, 0.201); /* Fondo oscuro semitransparente */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.542);
+  transition: transform 0.3s ease;
+}
+
+.vehiculo-card:hover {
+  transform: translateY(-5px);
+}
+
+.vehiculo-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.vehiculo-info {
+  padding: 15px;
+  color: white;
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+p {
+  margin: 0 0 15px 0;
+  color: #ccc;
+}
+
+.disponible {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.agotado {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.ver-detalles-button {
+  display: block;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.ver-detalles-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .vehiculos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.react-player {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.542);
+  margin: 5px;
+}
+
+.x{
+  margin: 15px;
+}

@@ -1,0 +1,79 @@
+/* Estilo para el fondo de la página de crear usuario */
+.crear-usuario-background {
+    background-image: url('../images/fordR.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Contenedor del formulario de crear usuario */
+  .crear-usuario-container {
+    background-color: rgba(0, 0, 0, 0.322);
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px; /* Aumenta el ancho máximo del contenedor */
+    text-align: center;
+  }
+  
+  h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    flex: 1;
+    margin-right: 10px; /* Añadir espacio entre los inputs en la misma fila */
+  }
+  
+  .input-group:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último input en la fila */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .crear-usuario-button, .switch-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .crear-usuario-button:hover, .switch-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  

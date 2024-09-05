@@ -1,0 +1,91 @@
+.reservas-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .reservas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .reserva-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reserva-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .vehiculo-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .reserva-info {
+    padding: 15px;
+    flex: 1;
+    color: black;
+  }
+  
+  h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  p {
+    margin: 0 0 10px 0;
+    padding: 5px;
+    color: #666;
+  }
+  
+  .estado-badge {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .estado-reservado {
+    background-color: #6c757d; /* Gris */
+  }
+  
+  .estado-cancelado {
+    background-color: #dc3545; /* Rojo */
+  }
+  
+  .estado-comprado {
+    background-color: #28a745; /* Verde */
+  }
+  
+  @media (max-width: 768px) {
+    .reservas-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .reserva-card {
+      margin-bottom: 20px;
+    }
+  }
+  
